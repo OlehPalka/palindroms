@@ -1,5 +1,6 @@
 """
 Palindrome class realization.
+git repo - https://github.com/OlehPalka/palindroms
 """
 
 from arraystack import ArrayStack   # or from linkedstack import LinkedStack
@@ -32,7 +33,6 @@ class Palindrome:
         method which finds palindroms.
         """
         words_list = self.read_file(file)
-        print(words_list)
         stack = ArrayStack()
         result = []
         for word in words_list:
@@ -66,7 +66,3 @@ class Palindrome:
         for i in words_list:
             file.write(i + "\n")
         file.close()
-
-
-palindrome = Palindrome()
-palindrome.find_palindromes("words.txt", "palindrome_uk.txt")
